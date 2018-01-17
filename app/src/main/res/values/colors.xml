@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent_light">#ff73a3</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorAccent_half">#50FF4081</color>
+    <color name="gray_10">#4e4e4e</color>
+    <color name="gray_10_half">#904e4e4e</color>
+    <color name="white" >#ffffff</color>
+    <color name="colorBase_light">#ffb546</color>
+    <color name="colorBase">#ff9900</color>
+    <color name="colorBase_dark">#d98301</color>
+    <color name="colorBase_darkMore">#cc7a00</color>
+    <color name="colorBase_subLittle">#85ff9900</color>
+    <color name="colorBase_half">#50ff9900</color>
+    <color name="background">#282737</color>
+    <color name="colorLucency">@android:color/transparent</color>
+    <color name="no_enable">#8a8a8a</color>
+    <color name="stop_red">#eb4f38</color>
+    <color name="color_editHint" >#50ff9900</color>
+    <color name="dialogRecordChange">#b5282737</color>
+    <color name="colorview">#99ff9900</color>
+</resources>

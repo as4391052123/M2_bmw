@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <com.bmw.m2.views.view.CompositeImageText
+            android:id="@+id/cit_record"
+            style="@style/style_top_menu_cit_style"
+            android:layout_width="@dimen/cit_width_long"
+            app:imgImage="@drawable/ic_record"
+            app:textString="@string/str_record" />
+
+
+        <com.bmw.m2.views.view.CompositeImageText
+            android:id="@+id/cit_capture"
+            style="@style/style_top_menu_cit_style"
+            app:imgImage="@drawable/ic_camera_alt_black_24dp"
+            app:textString="@string/str_capture" />
+
+
+        <LinearLayout
+            android:id="@+id/ll_jimiqi"
+            android:layout_width="@dimen/cit_width_long"
+            android:layout_height="@dimen/cit_width"
+            android:layout_marginLeft="8dp"
+            android:background="@drawable/bg_img_btn"
+            android:clickable="true"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingBottom="4dp">
+
+                <ImageView
+                    android:id="@+id/iv_jimiqi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|left"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginRight="2dp"
+                    android:src="@drawable/circle_yellow" />
+
+                <TextView
+                    android:id="@+id/tv_jimiqi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|right"
+                    android:text="0.00M"
+                    android:textColor="@color/colorBase"
+                    android:textSize="@dimen/text_size_ss" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:text="@string/str_jimiqi"
+                android:textColor="@color/colorBase"
+                android:textSize="@dimen/text_size_s" />
+        </LinearLayout>
+
+        <com.bmw.m2.views.view.CompositeImageText
+            android:id="@+id/cit_pictures"
+            style="@style/style_top_menu_cit_style"
+            app:imgImage="@drawable/ic_pictures"
+            app:textString="@string/str_picture" />
+
+        <com.bmw.m2.views.view.CompositeImageText
+            android:id="@+id/cit_play_back"
+            style="@style/style_top_menu_cit_style"
+            app:imgImage="@drawable/ic_play_circle_filled_black_24dp"
+            app:textString="@string/str_play_back" />
+
+        <com.bmw.m2.views.view.CompositeImageText
+            android:id="@+id/cit_biaozhu"
+            style="@style/style_top_menu_cit_style"
+            app:imgImage="@drawable/ic_edit_black_24dp"
+            app:textString="@string/str_biaozhu" />
+
+    </LinearLayout>
+
+
+    <com.bmw.m2.views.view.CompositeImageText
+        android:id="@+id/cit_protected"
+        style="@style/style_top_menu_cit_style"
+        android:layout_width="@dimen/cit_width_long"
+        android:clickable="false"
+        app:imgImage="@drawable/circle_red"
+        app:textColor="@color/stop_red"
+        app:textString="电机保护"
+        android:visibility="gone"/>
+
+
+    <com.bmw.m2.views.view.CompositeImageText
+        android:id="@+id/cit_quanxian"
+        style="@style/style_top_menu_cit_style"
+        android:clickable="false"
+        app:imgImage="@mipmap/disconnect"
+        app:textColor="@color/stop_red"
+        app:textString="@string/disconnect" />
+
+    <com.bmw.m2.views.view.CompositeImageText
+        android:id="@+id/cit_setting"
+        style="@style/style_top_menu_cit_style"
+        app:imgImage="@drawable/ic_set"
+        app:textString="@string/str_setting" />
+
+    <include layout="@layout/battery_layout" />
+
+
+</LinearLayout>

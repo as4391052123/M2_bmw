@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <Button
+        android:id="@+id/Dolphin_Test_1"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_btn_base"
+        android:textColor="@color/white"
+        android:text="Dolphin_Test_1"/>
+    <Button
+        android:id="@+id/Dolphin_Test_2"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_btn_base"
+        android:textColor="@color/white"
+        android:text="Dolphin_Test_2"/>
+    <Button
+        android:id="@+id/Dolphin_Test_3"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_btn_base"
+        android:textColor="@color/white"
+        android:text="Dolphin_Test_3"/>
+
+
+</LinearLayout>

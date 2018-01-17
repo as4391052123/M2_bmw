@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/preview_bottom_menu_height"
+    android:orientation="horizontal">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/iv_shouxian"
+            android:src="@drawable/ic_shouxian_gray"
+            android:padding="5dp"
+            style="@style/style_bottom_menu_img"/>
+
+        <ImageView
+            android:id="@+id/iv_yuntai_set_place"
+            android:src="@drawable/ic_camera_yuntai"
+            android:padding="7dp"
+            style="@style/style_bottom_menu_img"/>
+
+
+        <ImageView
+            android:id="@+id/iv_zitai"
+            android:src="@drawable/ic_extension_black_24dp"
+            android:padding="6dp"
+            style="@style/style_bottom_menu_img"/>
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/iv_rizhi"
+        android:src="@drawable/ic_rizhi"
+        android:padding="6dp"
+        style="@style/style_bottom_menu_img"/>
+
+    <ImageView
+        android:id="@+id/iv_wifi"
+        android:src="@drawable/ic_signal_wifi_4_bar_black_24dp"
+        android:padding="6dp"
+        style="@style/style_bottom_menu_img"/>
+    <ImageView
+        android:id="@+id/iv_biaoding"
+        android:src="@drawable/ic_biaoding"
+        android:padding="8dp"
+        style="@style/style_bottom_menu_img"
+        android:layout_marginRight="8dp"/>
+
+    <ImageView
+        android:id="@+id/iv_fog"
+        android:src="@drawable/ic_fog_close_64dp"
+        android:padding="3dp"
+        style="@style/style_bottom_menu_img"/>
+    <ImageView
+        android:id="@+id/iv_move_auto"
+        android:src="@drawable/ic_file_upload_gray_24dp"
+        android:padding="5dp"
+        style="@style/style_bottom_menu_img"/>
+
+
+    <ImageView
+        android:id="@+id/iv_test"
+        android:src="@drawable/ic_test_gray"
+        android:padding="8dp"
+        style="@style/style_bottom_menu_img"/>
+
+    <ImageView
+        android:id="@+id/iv_speed"
+        android:src="@drawable/ic_speed"
+        android:padding="8dp"
+        style="@style/style_bottom_menu_img"/>
+
+    <ImageView
+        android:id="@+id/iv_light"
+        android:src="@drawable/ic_light"
+        android:padding="5dp"
+        style="@style/style_bottom_menu_img"/>
+
+</LinearLayout>

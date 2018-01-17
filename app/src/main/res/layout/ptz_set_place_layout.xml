@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="@dimen/shouxian_width"
+    android:layout_height="@dimen/shouxian_height"
+    android:background="@drawable/bg_front_sufaceview"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:text="@string/str_ptz_set_place"
+        android:paddingTop="10dp"
+        android:paddingLeft="10dp"
+        android:textColor="@color/colorBase"
+        android:textSize="@dimen/text_size_m" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="@dimen/container_ptz_set_width"
+                android:layout_height="@dimen/container_ptz_set_height">
+                <View
+                    android:id="@+id/view_left"
+                    android:layout_width="@dimen/cit_width_long"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"/>
+                <View
+                    android:id="@+id/view_right"
+                    android:layout_width="@dimen/cit_width_long"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"/>
+
+                <com.bmw.m2.views.view.CompositeImageText
+                    android:id="@+id/cit_ptz_set_up"
+                    style="@style/style_top_menu_cit_style"
+                    android:layout_width="@dimen/cit_width_long"
+                    android:layout_centerHorizontal="true"
+                    app:imgImage="@drawable/ic_yuntai_up"
+                    android:layout_toRightOf="@id/view_left"
+                    android:layout_toLeftOf="@id/view_right"
+                    app:textString="@string/str_ptz_set_up" />
+
+                <com.bmw.m2.views.view.CompositeImageText
+                    android:id="@+id/cit_ptz_set_left"
+                    style="@style/style_top_menu_cit_style"
+                    android:layout_width="@dimen/cit_width_long"
+                    android:layout_below="@id/cit_ptz_set_up"
+                    app:imgImage="@drawable/ic_yuntai_left"
+                    app:textString="@string/str_ptz_set_left" />
+
+                <com.bmw.m2.views.view.CompositeImageText
+                    android:id="@+id/cit_ptz_set_circle"
+                    style="@style/style_top_menu_cit_style"
+                    android:layout_width="@dimen/cit_width_long"
+                    android:layout_below="@id/cit_ptz_set_up"
+                    android:layout_toRightOf="@id/cit_ptz_set_left"
+                    app:imgImage="@drawable/ic_yuntai_set_circle"
+                    app:textString="@string/str_ptz_set_circle" />
+
+                <com.bmw.m2.views.view.CompositeImageText
+                    android:id="@+id/cit_ptz_set_right"
+                    style="@style/style_top_menu_cit_style"
+                    android:layout_width="@dimen/cit_width_long"
+                    android:layout_below="@id/cit_ptz_set_up"
+                    android:layout_toRightOf="@id/cit_ptz_set_circle"
+                    app:imgImage="@drawable/ic_yuntai_right"
+                    app:textString="@string/str_ptz_set_right" />
+
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+
+</LinearLayout>

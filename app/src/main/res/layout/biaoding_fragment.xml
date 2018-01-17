@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+
+    <Switch
+        android:id="@+id/lift_biaoding_switch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="升降标定控制："
+        android:layout_margin="10dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/lift_biaoding_min"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="升降最低点标定"
+            android:background="@drawable/bg_btn_base"
+            android:layout_margin="3dp"
+            android:padding="5dp"/>
+
+        <Button
+            android:id="@+id/lift_biaoding_max"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="升降最高点标定"
+            android:background="@drawable/bg_btn_base"
+            android:layout_margin="3dp"
+            android:padding="5dp"/>
+
+    </LinearLayout>
+    <Switch
+        android:id="@+id/ptz_biaoding_switch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="云台标定控制："
+        android:layout_margin="10dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/ptz_rotate_zero"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="云台旋转零点标定"
+            android:background="@drawable/bg_btn_base"
+            android:layout_margin="3dp"
+            android:padding="5dp"/>
+        <Button
+            android:id="@+id/ptz_pitch_zero"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="云台俯仰零点标定"
+            android:background="@drawable/bg_btn_base"
+            android:layout_margin="3dp"
+            android:padding="5dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/ptz_pitch_max"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="云台俯仰上极限标定"
+            android:background="@drawable/bg_btn_base"
+            android:layout_margin="3dp"
+            android:padding="5dp"/>
+        <Button
+            android:id="@+id/ptz_pitch_min"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="云台俯仰下极限标定"
+            android:background="@drawable/bg_btn_base"
+            android:layout_margin="3dp"
+            android:padding="5dp"/>
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_container_border"
+    android:padding="3dp"
+    android:id="@+id/container_video_player"
+    android:visibility="visible">
+
+    <RelativeLayout
+        android:id="@+id/container_control_videoPlayer"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:id="@+id/tv_video_allTime"
+            android:layout_marginTop="@dimen/video_player_time_marginTop"
+            android:layout_marginLeft="10dp"
+            style="@style/video_play_text"
+            android:layout_centerVertical="true"
+            android:text="00:00"/>
+        <TextView
+            android:id="@+id/tv_video_timeXiangan"
+            android:layout_toRightOf="@+id/tv_video_allTime"
+            android:layout_alignBaseline="@+id/tv_video_allTime"
+            android:layout_centerVertical="true"
+            style="@style/video_play_text"
+            android:text="/"/>
+
+        <TextView
+            android:id="@+id/tv_video_currentTime"
+            android:layout_toRightOf="@+id/tv_video_timeXiangan"
+            android:layout_alignBaseline="@+id/tv_video_timeXiangan"
+            style="@style/video_play_text"
+            android:layout_centerVertical="true"
+            android:text="00:00"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:layout_centerHorizontal="true"
+            android:gravity="center">
+            <ImageView
+                android:id="@+id/play_start"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:padding="10dp"
+                android:clickable="true"
+                android:background="@drawable/bg_img_btn"
+                android:src="@mipmap/play_start"/>
+            <ImageView
+                android:id="@+id/play_stop"
+                android:layout_marginLeft="3dp"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:padding="10dp"
+                android:clickable="true"
+                android:background="@drawable/bg_img_btn"
+                android:src="@mipmap/play_stop"/>
+            <ImageView
+                android:id="@+id/play_last"
+                android:layout_marginLeft="3dp"
+                android:padding="8dp"
+                android:layout_width="37dp"
+                android:layout_height="37dp"
+                android:clickable="true"
+                android:background="@drawable/bg_img_btn"
+                android:src="@mipmap/play_last"/>
+            <ImageView
+                android:id="@+id/play_next"
+                android:layout_marginLeft="3dp"
+                android:padding="8dp"
+                android:layout_width="37dp"
+                android:layout_height="37dp"
+                android:clickable="true"
+                android:background="@drawable/bg_img_btn"
+                android:src="@mipmap/play_next"/>
+            <ImageView
+                android:id="@+id/play_slow"
+                android:layout_marginLeft="3dp"
+                android:padding="6dp"
+                android:layout_width="39dp"
+                android:layout_height="39dp"
+                android:clickable="true"
+                android:background="@drawable/bg_img_btn"
+                android:src="@mipmap/play_slow"/>
+            <ImageView
+                android:id="@+id/play_fast"
+                android:layout_marginLeft="5dp"
+                android:padding="6dp"
+                android:layout_width="39dp"
+                android:layout_height="39dp"
+                android:clickable="true"
+                android:background="@drawable/bg_img_btn"
+                android:src="@mipmap/play_fast"/>
+            <ImageView
+                android:id="@+id/play_cut"
+                android:layout_marginLeft="3dp"
+                android:padding="9dp"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:clickable="true"
+                android:background="@drawable/bg_img_btn"
+                android:src="@mipmap/play_cut"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_video_title_playSpeed"
+            android:layout_toLeftOf="@+id/tv_video_playSpeed"
+            android:layout_alignBaseline="@+id/tv_video_playSpeed"
+            style="@style/video_play_text"
+            android:text="@string/playSpeed"
+            android:layout_centerVertical="true"/>
+        <TextView
+            android:id="@+id/tv_video_playSpeed"
+            android:layout_marginTop="@dimen/video_player_time_marginTop"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            style="@style/video_play_text"
+            android:layout_centerVertical="true"
+            android:text="1X"/>
+
+
+    </RelativeLayout>
+
+    <SeekBar
+        android:id="@+id/player_seekbar"
+        style="@style/preview_seekBar"
+        android:layout_above="@id/container_control_videoPlayer"/>
+
+
+    <VideoView
+        android:id="@+id/player_surface"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_above="@id/player_seekbar"/>
+
+
+    <!--android:id="@+id/player_play"-->
+
+
+</RelativeLayout>

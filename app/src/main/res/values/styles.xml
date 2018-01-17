@@ -1,0 +1,157 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <style name="Widget.SeekBar.Normal" parent="@android:style/Widget.SeekBar">
+        <item name="android:maxHeight">25.0dip</item>
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:indeterminateDrawable">@android:drawable/progress_indeterminate_horizontal</item>
+        <item name="android:progressDrawable">@drawable/seekbar_horizontal</item>
+        <item name="android:minHeight">10.0dip</item>
+        <item name="android:thumb">@drawable/seebar_in</item>
+        <item name="android:thumbOffset">15.0dip</item>
+    </style>
+
+    <style name="style_top_menu_cit_style">
+        <item name="android:layout_width">@dimen/cit_width</item>
+        <item name="android:layout_height">@dimen/cit_width</item>
+        <item name="imgWidth">@dimen/cit_img_width</item>
+        <item name="imgHeight">@dimen/cit_img_width</item>
+        <item name="imgPadTop">@dimen/cit_img_pad_top</item>
+        <item name="imgPadBottom">@dimen/cit_img_pad_bottom</item>
+        <item name="imgPadLeft">@dimen/cit_img_pad_left</item>
+        <item name="imgPadRight">@dimen/cit_img_pad_right</item>
+        <item name="android:padding">@dimen/cit_padding</item>
+        <item name="android:clickable">true</item>
+        <item name="android:background">@drawable/bg_img_btn</item>
+        <item name="textColor">@color/colorBase</item>
+        <item name="textSize">@dimen/text_size_s</item>
+    </style>
+
+    <style name="style_bottom_menu_img">
+        <item name="android:layout_width">@dimen/preview_bottom_menu_height</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_marginLeft">8dp</item>
+        <item name="android:background">@drawable/bg_img_btn</item>
+        <item name="android:clickable">true</item>
+    </style>
+
+    <style name="dialog_record_list_title">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:textSize">9sp</item>
+    </style>
+
+    <style name="dialog_record_list_item" parent="dialog_record_list_title">
+        <item name="android:maxWidth">45dp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:maxEms">5</item>
+        <item name="android:textColor">@color/colorBase</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="activity_pic_show_list" parent="dialog_record_list_item">
+        <item name="android:textSize">@dimen/text_size_ss</item>
+        <item name="android:maxEms">500</item>
+        <item name="android:singleLine">false</item>
+        <item name="android:maxWidth">120dp</item>
+        <item name="android:padding">2dp</item>
+    </style>
+
+
+    <style name="preview_seekBar" parent="Widget.SeekBar.Normal">
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingBottom">8dp</item>
+        <item name="android:paddingTop">0dp</item>
+    </style>
+
+
+    <style name="video_play_text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/colorBase</item>
+        <item name="android:textSize">@dimen/text_size_s</item>
+    </style>
+
+    <style name="dialog_btn_text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/text_size_s</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceLarge</item>
+
+    </style>
+
+
+    <style name="dialog_anim" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/dialog_appear</item>
+        <item name="android:windowExitAnimation">@anim/dialog_disappear</item>
+    </style>
+
+
+    <style name="dialog_record_button">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">9sp</item>
+        <item name="android:background">@drawable/bg_record_btn</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:clickable">true</item>
+        <item name="android:layout_marginLeft">8dp</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="dialog_record_edit">
+        <item name="android:textColor">@color/colorBase</item>
+        <item name="android:textSize">@dimen/text_size_m</item>
+        <item name="android:padding">3dp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:imeOptions">flagNoExtractUi</item>
+    </style>
+
+
+    <style name="seekBar_text" >
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/text_size_m</item>
+        <item name="android:textColor">@color/colorBase</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceLarge</item>
+    </style>
+
+
+    <style name="textSet">
+        <item name="android:textSize">@dimen/text_size_m</item>
+        <item name="android:textColor">@color/colorBase</item>
+    </style>
+
+
+    <style name="small_textSet">
+        <item name="android:textSize">@dimen/text_size_m</item>
+        <item name="android:textColor">@color/colorBase</item>
+    </style>
+
+
+    <style name="MyEditTextTheme" parent="Theme.AppCompat.Light">
+        <item name="colorControlNormal">@color/colorBase</item>
+        <item name="colorControlActivated">@color/colorBase_light</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:maxLength">44</item>
+    </style>
+
+    <style name="SpnStyle">
+        <item name="android:colorControlNormal"></item>
+    </style>
+
+</resources>

@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_container_border"
+    android:orientation="vertical"
+    android:padding="@dimen/bg_container_border_width">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <include
+            android:id="@+id/private_right_menu_zoomAndSize_container"
+            layout="@layout/preview_zoom_size"
+            android:layout_width="@dimen/preview_liftControl_height"
+            android:layout_height="@dimen/preview_right_menu_width"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingBottom="@dimen/private_right_padding"
+            android:paddingRight="@dimen/private_right_padding"
+            android:paddingTop="@dimen/private_right_padding" />
+
+        <com.bmw.m2.views.view.DirectionButton
+            android:id="@+id/preview_ptzControl"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/preview_direction_move_control_width"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/private_right_menu_zoomAndSize_container"
+            android:padding="@dimen/private_right_padding"
+            app:dowmImage="@mipmap/ptz_down"
+            app:isShowShadows="true"
+            app:leftImage="@mipmap/ptz_left_xz"
+            app:normalCenterColor="@color/colorBase_light"
+            app:normalColor="@color/colorBase"
+            app:pressCenterColor="@color/colorAccent_light"
+            app:pressColor="@color/colorAccent"
+            app:rightImage="@mipmap/ptz_right_xz"
+            app:splitLineColor="@color/colorLucency"
+            app:splitLineWidth="@dimen/directionButton_lineWidth"
+            app:upImage="@mipmap/ptz_up" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.bmw.m2.views.view.RollButton
+            android:id="@+id/preview_right_menu_liftControl"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/preview_liftControl_height"
+            android:layout_centerHorizontal="true"
+            android:layout_toLeftOf="@+id/preview_changeCamera"
+            android:padding="@dimen/private_right_padding"
+            app:backColor="@color/colorLucency"
+            app:ballCenterColor="@color/colorBase_light"
+            app:borderColor="@color/colorBase"
+            app:borderWidth="@dimen/rollBtn_border_width"
+            app:isShadowShow="true"
+            app:rollTextSize="@dimen/roll_btn_text_size"
+            app:textOne="降"
+            app:textTwo="升" />
+
+        <ImageView
+            android:id="@+id/preview_changeCamera"
+            android:layout_width="@dimen/preview_liftControl_height"
+            android:layout_height="@dimen/preview_liftControl_height"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/bg_img_btn"
+            android:clickable="true"
+            android:padding="@dimen/private_right_padding"
+            android:src="@mipmap/back_camera" />
+    </RelativeLayout>
+    <!-- <include
+         layout="@layout/light_layout"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_above="@+id/preview_right_menu_liftControl"/>-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:id="@+id/ll_move_right_menu_container"
+            android:layout_width="@dimen/preview_liftControl_height"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:orientation="vertical"
+            android:gravity="center">
+            <ImageView
+                android:id="@+id/preview_ptz_reset"
+                android:layout_width="@dimen/preview_liftControl_height"
+                android:layout_height="@dimen/preview_liftControl_height"
+                android:src="@mipmap/reset"
+                android:clickable="true"
+                android:background="@drawable/bg_img_btn"
+                android:padding="9dp"/>
+
+            <ImageView
+                android:id="@+id/preview_jiguang"
+                android:clickable="true"
+                android:background="@drawable/bg_img_btn"
+                android:layout_width="@dimen/preview_liftControl_height"
+                android:layout_height="@dimen/preview_liftControl_height"
+                android:src="@drawable/ic_lazer_close_64dp"
+                android:padding="6dp"/>
+
+            <FrameLayout
+                android:id="@+id/preview_lihe"
+                android:clickable="true"
+                android:background="@drawable/bg_img_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="@dimen/preview_liftControl_height"
+                    android:layout_height="@dimen/preview_liftControl_height"
+                    android:src="@drawable/ic_move_64dp"
+                    android:padding="9dp"
+                    android:layout_gravity="center"/>
+                <ImageView
+                    android:id="@+id/iv_lihe_inhibit"
+                    android:layout_width="@dimen/preview_liftControl_height"
+                    android:layout_height="@dimen/preview_liftControl_height"
+                    android:src="@drawable/ic_inhibit_64dp"
+                    android:padding="6dp"
+                    android:layout_gravity="center"
+                    android:visibility="gone"/>
+            </FrameLayout>
+
+        </LinearLayout>
+
+        <com.bmw.m2.views.view.DirectionButton
+            android:id="@+id/preview_right_menu_moveControl"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/preview_direction_move_control_width"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/private_right_padding"
+            app:dowmImage="@mipmap/ptz_down"
+            app:isShowShadows="true"
+            app:leftImage="@mipmap/ptz_left"
+            app:normalCenterColor="@color/colorBase_light"
+            app:normalColor="@color/colorBase"
+            app:pressCenterColor="@color/colorAccent_light"
+            app:pressColor="@color/colorAccent"
+            app:rightImage="@mipmap/ptz_right"
+            app:splitLineColor="@color/colorLucency"
+            app:splitLineWidth="@dimen/directionButton_lineWidth"
+            app:upImage="@mipmap/ptz_up"
+            android:layout_toLeftOf="@id/ll_move_right_menu_container"/>
+
+
+    </RelativeLayout>
+
+</LinearLayout>

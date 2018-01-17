@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/light_width"
+    android:layout_height="@dimen/light_height"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:background="@drawable/bg_front_sufaceview">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+        <TextView
+            android:id="@+id/tv_ptz_light"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ptzLight"
+            android:textSize="@dimen/text_size_s"
+            android:textColor="@color/colorBase"
+            android:padding="@dimen/preview_lightControl_padding"
+            android:layout_centerVertical="true"/>
+        <SeekBar
+            android:id="@+id/sb_ptz_light"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Widget.SeekBar.Normal"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/tv_ptz_light"
+            android:paddingTop="@dimen/preview_lightControl_seekbar_padding"
+            android:paddingBottom="@dimen/preview_lightControl_seekbar_padding"
+            android:max="10"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+        <TextView
+            android:id="@+id/tv_frongt_light"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/headLight"
+            android:textSize="@dimen/text_size_s"
+            android:textColor="@color/colorBase"
+            android:padding="@dimen/preview_lightControl_padding"
+            android:layout_centerVertical="true"/>
+        <SeekBar
+            android:id="@+id/sb_front_light"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Widget.SeekBar.Normal"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/tv_frongt_light"
+            android:paddingTop="@dimen/preview_lightControl_seekbar_padding"
+            android:paddingBottom="@dimen/preview_lightControl_seekbar_padding"
+            android:max="10" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+        <TextView
+            android:id="@+id/back_light"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/backLight"
+            android:textSize="@dimen/text_size_s"
+            android:textColor="@color/colorBase"
+            android:padding="@dimen/preview_lightControl_padding"
+            android:layout_centerVertical="true"/>
+        <SeekBar
+            android:id="@+id/sb_back_light"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Widget.SeekBar.Normal"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/back_light"
+            android:paddingTop="@dimen/preview_lightControl_seekbar_padding"
+            android:paddingBottom="@dimen/preview_lightControl_seekbar_padding"
+            android:max="10"/>
+
+    </RelativeLayout>
+
+
+
+
+
+
+</LinearLayout>

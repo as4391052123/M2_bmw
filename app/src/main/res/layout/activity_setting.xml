@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_test"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+
+    <LinearLayout
+        android:id="@+id/ll_title_container"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/preview_top_menu_height">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical|left"
+            android:textColor="@color/colorBase"
+            android:textSize="@dimen/text_size_l"
+            android:layout_weight="1"
+            android:text="@string/str_setting"
+            android:padding="5dp"/>
+        <include layout="@layout/battery_layout" />
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_below="@id/ll_title_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_container_border"
+        android:padding="2dp"
+        android:id="@+id/frameLayout">
+
+            <RadioGroup
+                android:layout_above="@+id/setting_fragment_contain"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/setting_containerRg"
+                android:layout_width="@dimen/setting_rg_width"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="2dp"
+                android:gravity="center">
+                <RadioButton
+                    android:id="@+id/basic_setingRd"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/baseSetting"
+                    android:button="@null"
+                    android:textColor="@drawable/text_checked"
+                    android:textSize="@dimen/text_size_mx"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:background="@drawable/bg_radiobutton"/>
+                <RadioButton
+                    android:id="@+id/advance_settingRd"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/advanceSetting"
+                    android:button="@null"
+                    android:textColor="@drawable/text_checked"
+                    android:textSize="@dimen/text_size_mx"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:background="@drawable/bg_radiobutton"/>
+                <RadioButton
+                    android:id="@+id/environment_settingRd"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/environmentCount"
+                    android:button="@null"
+                    android:textColor="@drawable/text_checked"
+                    android:textSize="@dimen/text_size_mx"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:background="@drawable/bg_radiobutton"/>
+            </RadioGroup>
+            <FrameLayout
+                android:layout_centerInParent="true"
+                android:id="@+id/setting_fragment_contain"
+                android:layout_width="@dimen/setting_rg_width"
+                android:layout_height="@dimen/setting_fl_height"
+                android:background="@drawable/bg_container_border"
+                android:padding="5dp">
+
+
+            </FrameLayout>
+
+        <ImageView
+            android:id="@+id/setting_goback"
+            android:layout_margin="10dp"
+            android:clickable="true"
+            android:layout_width="@dimen/preview_top_menu_height"
+            android:layout_height="@dimen/preview_top_menu_height"
+            android:src="@mipmap/goback"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:padding="10dp"
+            android:background="@drawable/bg_img_btn"/>
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>

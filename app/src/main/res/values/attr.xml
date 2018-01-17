@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="DirectionButton">
+        <attr name="splitLineWidth" format="dimension" />
+        <attr name="splitLineColor" format="color|reference" />
+        <attr name="normalColor" format="color|reference" />
+        <attr name="pressColor" format="color|reference" />
+        <attr name="normalCenterColor" format="color|reference" />
+        <attr name="pressCenterColor" format="color|reference" />
+        <attr name="isShowShadows" format="boolean" />
+        <attr name="upImage" format="reference" />
+        <attr name="dowmImage" format="reference" />
+        <attr name="leftImage" format="reference" />
+        <attr name="rightImage" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="RollButton">
+        <attr name="borderWidth" format="dimension" />
+        <attr name="borderColor" format="color|reference" />
+        <attr name="backColor" format="color|reference" />
+        <attr name="ballCenterColor" format="color|reference" />
+        <attr name="ballMarginColor" format="color|reference" />
+        <attr name="isShadowShow" format="boolean" />
+        <attr name="isVertical" format="boolean" />
+        <attr name="textOne" format="string|reference"/>
+        <attr name="textTwo" format="string|reference"/>
+        <attr name="rollTextSize" format="dimension"/>
+    </declare-styleable>
+
+    <declare-styleable name="RockerButton">
+        <attr name="ballImage" format="reference" />
+        <attr name="ballRadius" format="dimension" />
+        <attr name="ballPressColor" format="color|reference" />
+        <attr name="ballUnPressColor" format="color|reference" />
+        <attr name="ballPressCenterColor" format="color|reference" />
+        <attr name="ballUnPressCenterColor" format="color|reference" />
+        <attr name="isShowShadow" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="CompositeImageText">
+        <attr name="imgPadLeft" format="dimension|reference" />
+        <attr name="imgPadRight" format="dimension|reference" />
+        <attr name="imgPadTop" format="dimension|reference" />
+        <attr name="imgPadBottom" format="dimension|reference" />
+        <attr name="imgMarginLeft" format="dimension|reference" />
+        <attr name="imgMarginRight" format="dimension|reference" />
+        <attr name="imgMarginTop" format="dimension|reference" />
+        <attr name="imgMarginBottom" format="dimension|reference" />
+        <attr name="imgWidth" format="dimension|reference" />
+        <attr name="imgHeight" format="dimension|reference" />
+        <attr name="imgImage" format="reference" />
+        <attr name="textSize" format="dimension" />
+        <attr name="textColor" format="color" />
+        <attr name="textString" format="string" />
+
+    </declare-styleable>
+    <!--
+        <declare-styleable name="BallButton">
+            <attr name="isShowShadow" format="boolean"/>
+            <attr name="ballRadius" format="dimension"/>
+            <attr name="ballMarginColor" format="color|reference"/>
+            <attr name="ballCenterColor" format="color|reference"/>
+            <attr name="ballMarginPressColor" format="color|reference"/>
+            <attr name="ballCenterPressColor" format="color|reference"/>
+            <attr name="rockerImage" format="reference"/>
+            <attr name="rollBorderColor" format="color|reference"/>
+            <attr name="rollBackColor" format="color|reference"/>
+            <attr name="splitLineWidth" format="dimension"/>
+            <attr name="splitLineColor" format="color|reference"/>
+        </declare-styleable>-->
+
+    <declare-styleable name="CompositeLlImgTv">
+        <attr name="CompositeLlImgTv_imgId" format="reference"/>
+        <attr name="CompositeLlImgTv_imgWidth" format="dimension|reference"/>
+        <attr name="CompositeLlImgTv_imgHeight" format="dimension|reference"/>
+        <attr name="CompositeLlImgTv_imgPadding" format="dimension|reference"/>
+        <attr name="CompositeLlImgTv_text" format="string"/>
+        <attr name="CompositeLlImgTv_textSize" format="dimension"/>
+        <attr name="CompositeLlImgTv_textColor" format="reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="MySpinner">
+        <attr name="width_view" format="dimension" />
+    </declare-styleable>
+
+</resources>

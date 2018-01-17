@@ -1,0 +1,89 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="preview_top_menu_height">50dp</dimen>
+    <dimen name="cit_width">50dp</dimen>
+    <dimen name="cit_width_long">60dp</dimen>
+    <dimen name="cit_img_width">45dp</dimen>
+    <dimen name="cit_img_pad_top">4dp</dimen>
+    <dimen name="cit_img_pad_bottom">18dp</dimen>
+    <dimen name="cit_img_pad_left">11dp</dimen>
+    <dimen name="cit_img_pad_right">11dp</dimen>
+    <dimen name="cit_padding">5dp</dimen>
+    <dimen name="text_size_s">11sp</dimen>
+    <dimen name="text_size_ss">9sp</dimen>
+    <dimen name="text_size_m">14sp</dimen>
+    <dimen name="text_size_mx">16sp</dimen>
+    <dimen name="text_size_l">20sp</dimen>
+
+    <dimen name="preview_container_margin_width">5dp</dimen>
+    <dimen name="dp_contain_radius">3dp</dimen>
+
+    <dimen name="preview_right_menu_width">190dp</dimen>
+    <dimen name="preview_direction_move_control_width">165dp</dimen>
+    <dimen name="preview_liftControl_height">45dp</dimen>
+    <dimen name="private_right_padding">5dp</dimen>
+    <dimen name="directionButton_lineWidth">2dp</dimen>
+    <dimen name="bg_container_border_width">2dp</dimen>
+    <dimen name="rollBtn_border_width">3dp</dimen>
+    <dimen name="roll_btn_text_size">13sp</dimen>
+
+    <dimen name="preview_bottom_menu_height">40dp</dimen>
+
+    <dimen name="zitai_width">195dp</dimen>
+    <dimen name="zitai_height">150dp</dimen>
+    <dimen name="zitai_img_width">65dp</dimen>
+
+    <dimen name="shouxian_height">155dp</dimen>
+    <dimen name="shouxian_width">195dp</dimen>
+    <dimen name="preview_lightControl_padding">5dp</dimen>
+    <dimen name="preview_lightControl_seekbar_marginLeft">20dp</dimen>
+    <dimen name="preview_lightControl_seekbar_padding">5dp</dimen>
+    <dimen name="shouxian_btn_width">30dp</dimen>
+    <dimen name="shouxian_btn_height">25dp</dimen>
+
+
+    <dimen name="container_ptz_set_width">190dp</dimen>
+    <dimen name="container_ptz_set_height">130dp</dimen>
+
+
+    <dimen name="light_height">155dp</dimen>
+    <dimen name="light_width">195dp</dimen>
+
+    <dimen name="file_show_rMenu_width">260dp</dimen>
+    <dimen name="search_contain_width">30dp</dimen>
+    <dimen name="search_text_size">15sp</dimen>
+    <dimen name="search_img_width">40dp</dimen>
+    <dimen name="file_show_marginbottom">50dp</dimen>
+    <dimen name="preview_topMenu_locateImg_width">40dp</dimen>
+    <dimen name="file_item_container_padding">2dp</dimen>
+    <dimen name="img_file_choose_width">20dp</dimen>
+
+
+    <dimen name="file_show_scroll_height">60dp</dimen>
+    <dimen name="pic_edit_rightMenu_width">260dp</dimen>
+    <dimen name="pic_edit_bottomMenu_height">30dp</dimen>
+
+    <dimen name="setting_rg_width">550dp</dimen>
+    <dimen name="setting_fl_height">300dp</dimen>
+
+    <dimen name="height_img_tishi">120dp</dimen>
+    <dimen name="dialog_biaoji_edit_height">80dp</dimen>
+    <dimen name="widht_img_clock">150dp</dimen>
+    <dimen name="height_img_clock">100dp</dimen>
+    <dimen name="marginLeft_add_quexian">150dp</dimen>
+    <dimen name="height_add_quexian">60dp</dimen>
+    <dimen name="height_environment_first_item">50dp</dimen>
+
+    <dimen name="setting_marginLR">100dp</dimen>
+
+
+    <dimen name="toast_tv_size" >11sp</dimen>
+    <dimen name="video_player_time_marginTop">0dp</dimen>
+    <dimen name="record_head_editor_container_marginbottom">10dp</dimen>
+    <dimen name="record_head_editor_marginbottom">4dp</dimen>
+    <dimen name="record_menu_height">50dp</dimen>
+    <dimen name="preview_toMenu_height">60dp</dimen>
+    <dimen name="record_dialog_edit">16sp</dimen>
+    <dimen name="dialog_biaoji_textsize">17sp</dimen>
+
+</resources>
